@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio 3 - Formularios</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <h1>Formulario de registro</h1>
+      <form action="">
+        <section>
+          <label for="name">Nombre:
+            <input type="text" name="nombre" id="name" />
+          </label>
+          <br />
+          <br />
+          <label for="lastname">Apellido:
+            <input type="text" name="apellido" id="lastname" />
+          </label>
+        </section>
+        <br />
+
+        <section>
+          Modalidad de Cursada:
+          <label for="onDemand">
+            <input type="radio" name="modalidad" id="onDemand" value="on-demand" />
+            On-Demand
+          </label>
+          <label for="enVivo">
+            <input type="radio" name="modalidad" id="enVivo" value="en-vivo" />
+            En vivo
+          </label>
+        </section>
+        <br />
+
+        <section>
+          <label for="e-mail">Correo:
+            <input type="email" name="correo" id="e-mail" />
+          </label>
+        </section>
+        <br />
+
+        <section>
+          <label for="recibirInfo">
+            <input type="checkbox" name="preguntas" id="recibirInfo" value="recibir-informacion"/>
+            Deseo recibir información sobre nuevos posteos en la plataforma de
+            Nucba.
+          </label>
+          <br />
+          <br />
+          <label for="lecturaDeTerminos">
+            <input type="checkbox" name="preguntas" id="lecturaDeTerminos" value="lectura-de-terminos"/>
+            Declaro que lei los términos y condiciones y estoy listo para
+            convertirme en desarrollado web Full Stack.
+          </label>
+        </section>
+        <br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
